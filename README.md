@@ -140,3 +140,13 @@ You should extend this template as follows:
 
 For a guided example of how to extend this template, see the Hello, World! tutorial 
 [here](https://docs.corda.net/hello-world-introduction.html).
+
+
+
+curl -i -X POST 'http://localhost:10050/create-iou?iouValue=12&partyName=O=PartyB,L=New%20York,C=US' -H 'Content-Type: application/x-www-form-urlencoded'
+
+
+curl -i -X POST 'http://127.0.0.1:50005/create-iou?iouValue=12&partyName=O=PartyB,L=New%20York,C=US' -H 'Content-Type: application/x-www-form-urlencoded
+
+http://localhost:50005/create-iou?iouValue=12&partyName="O=PartyB,L=NewYork,C=US"
+
